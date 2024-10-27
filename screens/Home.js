@@ -35,7 +35,7 @@ const Item = ({ name, price, description, image }) => (
     </View>
       <Image
       style={styles.itemImage}
-      source={`../images/menu/${image}`}
+      source={{uri: `https://github.com/jbbrejon/meta-react-native-capstone/blob/dev/images/menu/${image}?raw=true`}}
       accessible={true}
       accessibilityLabel={`Picture of ${name}`}
       />
@@ -257,7 +257,6 @@ const styles = StyleSheet.create({
   itemImage: {
     width: 100,
     height: 100,
-    resizeMode: "contain"
   },
   avatar: {
     flex: 1,
